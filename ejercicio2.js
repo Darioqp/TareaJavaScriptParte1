@@ -11,6 +11,7 @@ let array = [num1, num2, num3, num4, num5];
 document.write('Los números ingresados son: ' + array);
 document.write('<br>');
 
+
 var i;
 var mayorNum = 0;
 
@@ -23,3 +24,7 @@ for (i = 0; i < array.length; i++) {
 }
 
 document.write('El mayor número es: ' + mayorNum);
+
+var max = Math.max(...array);
+
+console.log('El máximo valor es: ' + max)
