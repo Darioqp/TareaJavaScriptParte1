@@ -8,9 +8,18 @@ num5 = prompt('Ingresa el quinto número:');
 
 let array = [num1, num2, num3, num4, num5];
 
-var i;
+document.write('Los números ingresados son: ' + array);
+document.write('<br>');
 
-for (i = 0; i <= 4; i++) {
-    document.write(array[i])
-    document.write('<br>')
+var i;
+var mayorNum = 0;
+
+for (i = 0; i < array.length; i++) {
+
+    if (array[i] > mayorNum) {
+
+        mayorNum = array[i];
+    }
 }
+
+document.write('El mayor número es: ' + mayorNum);
